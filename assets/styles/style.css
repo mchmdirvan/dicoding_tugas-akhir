@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*---JUMBOTRON---*/
+.jumbotron {
+  min-height: 800px;
+  background: url(/assets/image/Yulje-Medical.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.jumbotron h1 {
+  font-size: 60px;
+}
+
+.jumbotron h1:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.jumbotron p {
+  font-size: 20px;
+}
+
+/*---NAVBAR---*/
+header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  transition: 0.6s;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 10px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+.btn {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/*---STICKY NAVBAR---*/
+.sticky {
+  background: white;
+  padding: 10px 40px;
+}
+
+.sticky a {
+  color: #3a4750;
+}
+
+.sticky .btn {
+  color: #3a4750;
+}
+
+.sticky nav a:after {
+  content: "";
+  position: absolute;
+  background-color: #dfb892;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.sticky nav a:hover {
+  color: black;
+}
+
+.sticky nav a:hover:after {
+  width: 100%;
+}
+
+/*---MAIN---*/
+.content h2 {
+  font-size: 30px;
+  font-weight: 600px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.content p {
+  font-size: 13px;
+}
+
+/*---INFORMASI---*/
+#informasi {
+  background: white;
+  padding: 10px 100px 60px;
+  color: #3a4750;
+  text-align: justify;
+}
+
+#informasi h2 {
+  margin: 20px 0;
+}
+
+/*---LAYANAN---*/
+#layanan {
+  background-image: url(/assets/image/Medical-Service.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+#layanan h2 {
+  color: #f7f7f7;
+  margin: 30px 0;
+}
+
+#layanan h2:hover {
+  color: #3a4750;
+  transition: 0.4s;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 420px;
+  height: 85vh;
+  margin: 20px;
+  background-color: white;
+  font-size: 13px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  overflow: auto;
+}
+
+.flex-item h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.flex-item ul {
+  padding: 30px;
+}
+
+.flex-item li {
+  margin: 0 30px 5px;
+}
+
+.flex-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px 50px 0 0;
+}
+
+.flex-item:hover {
+  box-shadow: 0 0 5px 5px #3a4750;
+  transform: translateY(-20px);
+  transition: 0.4s;
+}
+
+.flex-item::-webkit-scrollbar {
+  display: none;
+}
+
+/*---KONTAK---*/
+#kontak .wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10%;
+  margin: 0 20px;
+}
+
+#kontak h2 {
+  margin-bottom: 40px;
+}
+
+/*---ASIDE---*/
+aside {
+  background: url(/assets/image/Aside.png);
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.aside h3 {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.aside p {
+  font-size: 15px;
+  color: white;
+}
+
+.aside h3:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.biodata {
+  color: white;
+}
+
+.biodata h2 {
+  margin-bottom: 30px;
+}
+.biodata h3 {
+  letter-spacing: 0;
+}
+
+.biodata p {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.biodata img {
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 40px 0;
+}
+
+.container-bio {
+  display: flex;
+  justify-content: center;
+}
+
+.item-bio {
+  width: 420px;
+  height: 60vh;
+  margin-bottom: 50px;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.item-bio:hover {
+  box-shadow: 0 0 5px 5px #f7f7f7;
+  transform: translateY(-20px);
+  transition: 0.4s;
+}
+
+/*---FOOTER---*/
+footer {
+  padding: 20px;
+  background-color: white;
+  color: #3a4750;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*---MEDIA QUERY---*/
+@media screen and (max-width: 1060px) {
+  header {
+    padding: 30px 50px;
+  }
+  nav {
+    position: fixed;
+    background: #f7f7f7;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -150%;
+    padding: 80px 40px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+  nav a {
+    color: #3a4750;
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+  nav a:after {
+    content: "";
+    position: absolute;
+    background-color: #dfb892;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: black;
+  }
+  nav a:hover:after {
+    width: 100%;
+  }
+  nav .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    color: #3a4750;
+  }
+
+  .btn {
+    display: block;
+  }
+  .menu.active {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .jumbotron {
+    align-items: flex-start;
+  }
+  #layanan .flex-item {
+    max-width: 250px;
+    max-height: 540px;
+    border-radius: 10px;
+  }
+  #layanan .flex-item img {
+    max-height: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+  .aside h3 {
+    font-size: 30px;
+  }
+  .aside p {
+    font-size: 20px;
+  }
+  .item-bio {
+    max-width: 250px;
+    max-height: 540px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  #kontak .flex-row {
+    display: block;
+  }
+  #kontak .row-icon {
+    gap: 0 3%;
+    justify-content: center;
+    margin: 20px 10px;
+  }
+  #kontak h2 {
+    font-size: 20px;
+  }
+  #kontak p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .jumbotron h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .jumbotron p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .content h2 {
+    font-size: 25px;
+  }
+  .content p {
+    font-size: 13px;
+  }
+  #informasi {
+    padding: 20px 30px 80px;
+  }
+  footer {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #layanan .flex-item {
+    min-width: 250px;
+    max-height: 540px;
+    border-radius: 10px;
+  }
+  #layanan .flex-item img {
+    max-height: 100px;
+    border-radius: 10px 10px 0 0;
+  }
+  #kontak .row-icon {
+    gap: 0 5%;
+    margin: 20px 10px;
+  }
+  .aside h3 {
+    font-size: 20px;
+  }
+  .aside p {
+    font-size: 15px;
+  }
+}
