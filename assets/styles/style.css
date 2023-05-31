@@ -11,7 +11,7 @@
 /*---JUMBOTRON---*/
 .jumbotron {
   min-height: 800px;
-  background: url(/assets/image/Yulje-Medical.png) no-repeat;
+  background: url(../image/Yulje-Medical.png) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -150,7 +150,7 @@ nav a:hover:after {
 
 /*---LAYANAN---*/
 #layanan {
-  background-image: url(/assets/image/Medical-Service.png);
+  background-image: url(../image/Medical-Service.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -244,7 +244,7 @@ nav a:hover:after {
 
 /*---ASIDE---*/
 aside {
-  background: url(/assets/image/Aside.png);
+  background: url(../image/Aside.png);
   min-height: 200px;
   background-size: cover;
   background-position: center;
